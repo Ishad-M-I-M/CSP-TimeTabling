@@ -35,10 +35,10 @@ def backtracking_search(assiged, proposed_lecture_slots, available_rooms, assign
                 assiged[d] = [subject, None, None]
                 continue
 
-        if type == "C":
+        if type == "c":
             # consider only the First room since no two lectures can be assigned
             pass
-        elif type == "O":
+        elif type == "o":
             if len(assigned_rooms.get(slot, [])) > 0:
                 already_assigned_rooms = assigned_rooms[slot]
                 rooms = copy.deepcopy(already_assigned_rooms)
@@ -85,6 +85,7 @@ def assign(input_file, output_file):
     try:
         if not backtracking_search(assigned_subjects, proposed_lecture_slots, available_rooms):
             print(f"{bcolors.WARNING}Cannot Assign Rooms with Given Data{bcolors.ENDC}")
+            sys.exit(-1)
 
     except Exception as e:
         print(bcolors.FAIL + str(e) + bcolors.ENDC)
@@ -105,7 +106,7 @@ if __name__ == "__main__":
                         metavar=bcolors.OKBLUE + 'input.csv' + bcolors.ENDC,
                         type=str,
                         help="csv file containing raw data.\n"
-                             f"* Format of records: {bcolors.OKCYAN}<subject_x>,<compulsory[C]/ optional[O]>{bcolors.ENDC} [one or more time slots]\n"
+                             f"* Format of records: {bcolors.OKCYAN}<subject_x>,<compulsory[c]/ optional[o]>{bcolors.ENDC} [one or more time slots]\n"
                              "* Last line available rooms as R1, R2, etc.")
 
     parser.add_argument('output',
