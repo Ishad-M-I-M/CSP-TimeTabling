@@ -1,11 +1,12 @@
-CS3052,M1,R1
-CS3412,Tu1,R1
-CS3512,Tu2,R1
-CS3202,Th1,R1
-MN3042,M2,R1
-CS3612,Tu2,R2
-CS3242,W2,R1
-CS3062,Th2,R1
-MA3013,W1,R1
-CS3212,Th2,R2
-CS3712,W2,R2
+Subject_1,F1,R1
+Subject_2,M2,R1
+Subject_3,M1,R1
+Subject_4,Tu2,R1
+Subject_5,W2,R1
+Subject_6,M1, R2
+Subject_7,M3,R1
+Subject_8,M3, R2
+Subject_9,F1, R2
+Subject_10,M2, R2
+Subject_11,Tu2, R2
+Subject_11,Th2,R1

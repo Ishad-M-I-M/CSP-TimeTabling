@@ -20,7 +20,7 @@ def backtracking_search(assiged, proposed_lecture_slots, available_rooms, assign
         # assignment complete
         return True
 
-    subject, type, slots = proposed_lecture_slots[d][0], proposed_lecture_slots[d][1], proposed_lecture_slots[d][2:]
+    subject, type, slots = proposed_lecture_slots[d][0].strip(), proposed_lecture_slots[d][1].strip(), [x.strip() for x in proposed_lecture_slots[d][2:]]
 
     for slot in slots:
         # check whether the slot is already assigned

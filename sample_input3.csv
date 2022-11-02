@@ -1,0 +1,13 @@
+Subject_1, c, M1, M3,F1
+Subject_2, o,M2,Th2,M3,W2,F1, Tu2, M1
+Subject_3, c, M1, M3,Tu2
+Subject_4, c, M1, Tu2, M3
+Subject_5, c, M1, M3, W2,Tu2,F1
+Subject_6, o,M1, Tu2,M3,F1,Th2
+Subject_7, c,M1, Tu2, M3
+Subject_8, o,M1,M3,F2,W2
+Subject_9, o,M3,F1,Th2,F2
+Subject_10, o,F1,M2,M3
+Subject_11, o, Tu2, M1,M3,W2,F1,M2
+Subject_11, o, Th2, M1,M3,F2,F1,W2,M2,Tu1,Tu2
+R1, R2
